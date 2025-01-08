@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9133FB8A2D31F7D1000F40B0 /* PitchTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9133FB892D31F7D1000F40B0 /* PitchTest.swift */; };
+		915819672D305CA6005BA56B /* IntervalCalculatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915819642D305CA6005BA56B /* IntervalCalculatorTest.swift */; };
+		915819712D305CAF005BA56B /* IntervalCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9158196B2D305CAF005BA56B /* IntervalCalculator.swift */; };
+		915819722D305CAF005BA56B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9158196D2D305CAF005BA56B /* main.swift */; };
+		91AFA5272D30CF4900B60A27 /* Pitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D3D5792D30734E0075A6FE /* Pitch.swift */; };
+		91AFA5292D30D8CB00B60A27 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AFA5282D30D8CB00B60A27 /* Helper.swift */; };
+		91AFA52A2D30D8CB00B60A27 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AFA5282D30D8CB00B60A27 /* Helper.swift */; };
+		91AFA52B2D30DCA100B60A27 /* Interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D3D5782D30734E0075A6FE /* Interval.swift */; };
+		91AFA52C2D30E18200B60A27 /* IntervalCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9158196B2D305CAF005BA56B /* IntervalCalculator.swift */; };
+		91D3D57B2D30734E0075A6FE /* Pitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D3D5792D30734E0075A6FE /* Pitch.swift */; };
+		91D3D57C2D30734E0075A6FE /* Interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D3D5782D30734E0075A6FE /* Interval.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		91D3D5062D305E650075A6FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9182C85B2D2E10890015BB75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9182C8622D2E10890015BB75;
+			remoteInfo = TransposeMusicXML;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9182C8612D2E10890015BB75 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9133FB892D31F7D1000F40B0 /* PitchTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchTest.swift; sourceTree = "<group>"; };
+		915819642D305CA6005BA56B /* IntervalCalculatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalCalculatorTest.swift; sourceTree = "<group>"; };
+		9158196B2D305CAF005BA56B /* IntervalCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalCalculator.swift; sourceTree = "<group>"; };
+		9158196D2D305CAF005BA56B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		9182C8632D2E10890015BB75 /* TransposeMusicXML */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TransposeMusicXML; sourceTree = BUILT_PRODUCTS_DIR; };
+		9182C8722D2E120B0015BB75 /* TransposeMusicXMLTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransposeMusicXMLTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		91AFA5282D30D8CB00B60A27 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		91D3D5782D30734E0075A6FE /* Interval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interval.swift; sourceTree = "<group>"; };
+		91D3D5792D30734E0075A6FE /* Pitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pitch.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9182C8602D2E10890015BB75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9182C86F2D2E120B0015BB75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		915819632D305CA6005BA56B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9133FB892D31F7D1000F40B0 /* PitchTest.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		915819652D305CA6005BA56B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				915819642D305CA6005BA56B /* IntervalCalculatorTest.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		915819662D305CA6005BA56B /* TransposeMusicXMLTest */ = {
+			isa = PBXGroup;
+			children = (
+				915819632D305CA6005BA56B /* Models */,
+				915819652D305CA6005BA56B /* Services */,
+			);
+			path = TransposeMusicXMLTest;
+			sourceTree = "<group>";
+		};
+		9158196C2D305CAF005BA56B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9158196B2D305CAF005BA56B /* IntervalCalculator.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9158196E2D305CAF005BA56B /* TransposeMusicXML */ = {
+			isa = PBXGroup;
+			children = (
+				91D3D57A2D30734E0075A6FE /* Models */,
+				9158196C2D305CAF005BA56B /* Services */,
+				9158196D2D305CAF005BA56B /* main.swift */,
+			);
+			path = TransposeMusicXML;
+			sourceTree = "<group>";
+		};
+		9182C85A2D2E10890015BB75 = {
+			isa = PBXGroup;
+			children = (
+				9158196E2D305CAF005BA56B /* TransposeMusicXML */,
+				915819662D305CA6005BA56B /* TransposeMusicXMLTest */,
+				9182C8642D2E10890015BB75 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9182C8642D2E10890015BB75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9182C8632D2E10890015BB75 /* TransposeMusicXML */,
+				9182C8722D2E120B0015BB75 /* TransposeMusicXMLTest.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		91D3D57A2D30734E0075A6FE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				91D3D5782D30734E0075A6FE /* Interval.swift */,
+				91D3D5792D30734E0075A6FE /* Pitch.swift */,
+				91AFA5282D30D8CB00B60A27 /* Helper.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9182C8622D2E10890015BB75 /* TransposeMusicXML */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9182C86A2D2E10890015BB75 /* Build configuration list for PBXNativeTarget "TransposeMusicXML" */;
+			buildPhases = (
+				9182C85F2D2E10890015BB75 /* Sources */,
+				9182C8602D2E10890015BB75 /* Frameworks */,
+				9182C8612D2E10890015BB75 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TransposeMusicXML;
+			packageProductDependencies = (
+			);
+			productName = TransposeMusicXML;
+			productReference = 9182C8632D2E10890015BB75 /* TransposeMusicXML */;
+			productType = "com.apple.product-type.tool";
+		};
+		9182C8712D2E120B0015BB75 /* TransposeMusicXMLTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9182C8762D2E120B0015BB75 /* Build configuration list for PBXNativeTarget "TransposeMusicXMLTest" */;
+			buildPhases = (
+				9182C86E2D2E120B0015BB75 /* Sources */,
+				9182C86F2D2E120B0015BB75 /* Frameworks */,
+				9182C8702D2E120B0015BB75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				91D3D5072D305E650075A6FE /* PBXTargetDependency */,
+			);
+			name = TransposeMusicXMLTest;
+			packageProductDependencies = (
+			);
+			productName = TransposeMusicXMLTest;
+			productReference = 9182C8722D2E120B0015BB75 /* TransposeMusicXMLTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9182C85B2D2E10890015BB75 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					9182C8622D2E10890015BB75 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					9182C8712D2E120B0015BB75 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = 9182C85E2D2E10890015BB75 /* Build configuration list for PBXProject "TransposeMusicXML" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9182C85A2D2E10890015BB75;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 9182C8642D2E10890015BB75 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9182C8622D2E10890015BB75 /* TransposeMusicXML */,
+				9182C8712D2E120B0015BB75 /* TransposeMusicXMLTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9182C8702D2E120B0015BB75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9182C85F2D2E10890015BB75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				915819712D305CAF005BA56B /* IntervalCalculator.swift in Sources */,
+				91D3D57B2D30734E0075A6FE /* Pitch.swift in Sources */,
+				91AFA52A2D30D8CB00B60A27 /* Helper.swift in Sources */,
+				91D3D57C2D30734E0075A6FE /* Interval.swift in Sources */,
+				915819722D305CAF005BA56B /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9182C86E2D2E120B0015BB75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91AFA52C2D30E18200B60A27 /* IntervalCalculator.swift in Sources */,
+				91AFA5272D30CF4900B60A27 /* Pitch.swift in Sources */,
+				9133FB8A2D31F7D1000F40B0 /* PitchTest.swift in Sources */,
+				915819672D305CA6005BA56B /* IntervalCalculatorTest.swift in Sources */,
+				91AFA52B2D30DCA100B60A27 /* Interval.swift in Sources */,
+				91AFA5292D30D8CB00B60A27 /* Helper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		91D3D5072D305E650075A6FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9182C8622D2E10890015BB75 /* TransposeMusicXML */;
+			targetProxy = 91D3D5062D305E650075A6FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9182C8682D2E10890015BB75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9182C8692D2E10890015BB75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		9182C86B2D2E10890015BB75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9182C86C2D2E10890015BB75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		9182C8772D2E120B0015BB75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Blues.TransposeMusicXMLTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9182C8782D2E120B0015BB75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Blues.TransposeMusicXMLTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9182C85E2D2E10890015BB75 /* Build configuration list for PBXProject "TransposeMusicXML" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9182C8682D2E10890015BB75 /* Debug */,
+				9182C8692D2E10890015BB75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9182C86A2D2E10890015BB75 /* Build configuration list for PBXNativeTarget "TransposeMusicXML" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9182C86B2D2E10890015BB75 /* Debug */,
+				9182C86C2D2E10890015BB75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9182C8762D2E120B0015BB75 /* Build configuration list for PBXNativeTarget "TransposeMusicXMLTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9182C8772D2E120B0015BB75 /* Debug */,
+				9182C8782D2E120B0015BB75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9182C85B2D2E10890015BB75 /* Project object */;
+}
