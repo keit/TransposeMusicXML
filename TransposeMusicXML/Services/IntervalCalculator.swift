@@ -12,6 +12,7 @@ func calculateInterval(from start: Pitch, to end: Pitch) -> Interval {
 }
 
 
-func up(from: Pitch, interval: Interval) -> Pitch {
-    Pitch(step: .C)
+//func up(from: Pitch, interval: Interval) -> Pitch {
+func up(from: Pitch, interval: Interval) throws -> Pitch {
+    try from.up(interval: interval)
 }

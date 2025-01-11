@@ -8,7 +8,7 @@
 import Foundation
 
 func main() {
-    let p = Pitch(step: .C)
+    let p = Pitch(noteName: .C)
     print(p)
 }
 

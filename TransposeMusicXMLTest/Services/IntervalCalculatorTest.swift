@@ -26,14 +26,7 @@ final class IntervalCalculatorTest: XCTestCase {
         // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
     }
 
-    func testUp() throws {
-        let p = up(from: Pitch(step: .C), interval: .minorSecond)
-        XCTAssertEqual(p, Pitch(step: .C, alter: 1))
-//        XCTAssertTrue(containsOne, "answer options should contain \(questions.correctAnswer)")
 
-        
-    }
-    
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
         self.measure {

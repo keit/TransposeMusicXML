@@ -7,29 +7,35 @@
 
 import Foundation
 
-public struct Interval {
+public struct Interval: Equatable {
+    public static func == (lhs: Interval, rhs: Interval) -> Bool {
+        lhs.halfSteps == rhs.halfSteps
+    }
+    
+//    public static func == (lhs: Pitch, rhs: Pitch) -> Bool {
+//        lhs.noteName == rhs.noteName && lhs.alter == rhs.alter && lhs.octave == rhs.octave
+//    }
+
     // Properties
-    @Bounded(wrappedValue: 1, 1...8) private var degrees: Int
-    private var alter: Int = 0
+    @Bounded(wrappedValue: 0, 0...12) private(set) var halfSteps: Int
 
     // Predefined immutable instances
-    public static let unison = Interval(degrees: 1, alter: 0)
-    public static let minorSecond = Interval(degrees: 2, alter: -1)
-    public static let majorSecond = Interval(degrees: 2, alter: 0)
-    public static let minorThird = Interval(degrees: 3, alter: -1)
-    public static let majorThird = Interval(degrees: 3, alter: 0)
-    public static let perfectFourth = Interval(degrees: 4, alter: 0)
-    public static let diminishedFifth = Interval(degrees: 5, alter: -1)
-    public static let perfectFifth = Interval(degrees: 5, alter: 0)
-    public static let minorSixth = Interval(degrees: 6, alter: -1)
-    public static let majorSixth = Interval(degrees: 6, alter: 0)
-    public static let minorSeventh = Interval(degrees: 7, alter: -1)
-    public static let majorSeventh = Interval(degrees: 7, alter: 0)
-    public static let octave = Interval(degrees: 8, alter: 0)
+    public static let unison = Interval(halfSteps: 0)
+    public static let minorSecond = Interval(halfSteps: 1)
+    public static let majorSecond = Interval(halfSteps: 2)
+    public static let minorThird = Interval(halfSteps: 3)
+    public static let majorThird = Interval(halfSteps: 4)
+    public static let perfectFourth = Interval(halfSteps: 5)
+    public static let diminishedFifth = Interval(halfSteps: 6)
+    public static let perfectFifth = Interval(halfSteps: 7)
+    public static let minorSixth = Interval(halfSteps: 8)
+    public static let majorSixth = Interval(halfSteps: 9)
+    public static let minorSeventh = Interval(halfSteps: 10)
+    public static let majorSeventh = Interval(halfSteps: 11)
+    public static let octave = Interval(halfSteps: 12)
 
     // Restrict user instantiation
-    private init(degrees: Int, alter: Int = 0) {
-        self.degrees = degrees
-        self.alter = alter
+    private init(halfSteps: Int) {
+        self.halfSteps = halfSteps
     }
 }
