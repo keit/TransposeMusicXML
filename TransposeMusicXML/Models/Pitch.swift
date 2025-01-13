@@ -56,33 +56,48 @@ public struct Pitch: CustomStringConvertible, Equatable {
         return "Pitch(step: \(noteName), alter: \(alter), octave: \(octave)), index: \(index)"
     }
     
-    private func findNoteNames(index: Int) throws -> (lowerNote: NoteName, higherNote: NoteName) {
+    private func findPitch(index: Int, octave: Int) throws -> Pitch {
         if let lowerOrEqualNote = noteName2Index.filter({ $0.value <= index }).max(by: { $0.value < $1.value }),
            let higherOrEqualNote = noteName2Index.filter({ $0.value >= index }).min(by: { $0.value < $1.value }) {
-            return (lowerOrEqualNote.key, higherOrEqualNote.key)
+
+            if lowerOrEqualNote == higherOrEqualNote {
+                let newPitch = Pitch(noteName: lowerOrEqualNote.key, alter: 0, octave: octave)
+                return newPitch
+            } else {
+                // Handle flat and sharp. For now, it always return with #
+                let newPitch = Pitch(noteName: lowerOrEqualNote.key, alter: 1, octave: octave)
+                return newPitch
+            }
         } else {
             throw PitchError.outOfRange
         }
     }
-        
+    
     public func up(interval: Interval) throws -> Pitch {
-        let toIndex = (self.index + interval.halfSteps) % 12
-        let octave = interval == .octave ? self.octave + 1 : self.octave
+        let to = self.index + interval.halfSteps
+        let toIndex =  to % 12
+        let octave = to >= 12 ? self.octave + 1 : self.octave
         
         do {
-            let (lowerNote, higherNote) = try findNoteNames(index: toIndex)
-            if lowerNote == higherNote {
-                let newPitch = Pitch(noteName: lowerNote, alter: 0, octave: octave)
-                return newPitch
-            } else {
-                // Handle flat and sharp. For now, it always return with #
-                let newPitch = Pitch(noteName: lowerNote, alter: 1, octave: octave)
-                return newPitch
-            }
+            return try findPitch(index: toIndex, octave: octave)
         }
         catch {
             throw error
         }
     }
+    
+    public func down(interval: Interval) throws -> Pitch {
+        let to = self.index - interval.halfSteps
+        let toIndex = to % 12 < 0 ? (12 + to % 12) : to % 12
+        let octave = to < 0 ? self.octave - 1 : self.octave
+        
+        do {
+            return try findPitch(index: toIndex, octave: octave)
+        }
+        catch {
+            throw error
+        }
+    }
+
 }
 
