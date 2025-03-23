@@ -68,7 +68,7 @@ final class PitchTest: XCTestCase {
         XCTAssertEqual(Pitch(noteName: .C, alter: 1).index, Pitch(noteName: .D, alter: -1).index)
     }
     
-    func testUpFromC() throws {
+    func testUpFromCWithKeyC() throws {
         var newPitch: Pitch!
         newPitch = try p.up(interval: .unison)
         XCTAssertEqual(newPitch, Pitch(noteName: .C, alter: 0, octave: 4))
@@ -110,7 +110,7 @@ final class PitchTest: XCTestCase {
         XCTAssertEqual(newPitch, Pitch(noteName: .C, alter: 0, octave: 5))
     }
 
-    func testUpFromCSharp() throws {
+    func testUpFromCSharpWithKeyC() throws {
         var newPitch: Pitch!
         p = Pitch(noteName: .C, alter: 1, octave: 4)
         
@@ -154,7 +154,7 @@ final class PitchTest: XCTestCase {
         XCTAssertEqual(newPitch, Pitch(noteName: .C, alter: 1, octave: 5))
     }
 
-    func testDownFromC() throws {
+    func testDownFromCWithKeyC() throws {
         var newPitch: Pitch!
         newPitch = try p.down(interval: .unison)
         XCTAssertEqual(newPitch, Pitch(noteName: .C, alter: 0, octave: 4))
@@ -196,7 +196,7 @@ final class PitchTest: XCTestCase {
         XCTAssertEqual(newPitch, Pitch(noteName: .C, alter: 0, octave: 3))
     }
 
-    func testDownFromCSharp() throws {
+    func testDownFromCSharpWithKeyC() throws {
         var newPitch: Pitch!
         p = Pitch(noteName: .C, alter: 1, octave: 4)
 
