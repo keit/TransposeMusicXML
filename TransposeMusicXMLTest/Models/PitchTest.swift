@@ -283,6 +283,51 @@ final class PitchTest: XCTestCase {
         newPitch = try p.up(interval: .octave, key: .f_major)
         XCTAssertEqual(newPitch, Pitch(noteName: .F, alter: 0, octave: 5))
     }
+    
+    func testUpFromFSharpWithKeyF() throws {
+        var newPitch: Pitch!
+        p = Pitch(noteName: .F, alter: 1, octave: 4)
+        // The original is F# but is returned as Gb... Is this ok?
+        newPitch = try p.up(interval: .unison, key: .f_major)
+        XCTAssertEqual(newPitch, Pitch(noteName: .G, alter: -1, octave: 4))
+
+        newPitch = try p.up(interval: .minorSecond, key: .f_major)
+        XCTAssertEqual(newPitch, Pitch(noteName: .G, alter: 0, octave: 4))
+
+        newPitch = try p.up(interval: .majorSecond, key: .f_major)
+        XCTAssertEqual(newPitch, Pitch(noteName: .A, alter: -1, octave: 4))
+
+        newPitch = try p.up(interval: .minorThird, key: .f_major)
+        XCTAssertEqual(newPitch, Pitch(noteName: .A, alter: 0, octave: 4))
+
+        newPitch = try p.up(interval: .majorThird, key: .f_major)
+        XCTAssertEqual(newPitch, Pitch(noteName: .B, alter: -1, octave: 4))
+
+        newPitch = try p.up(interval: .perfectFourth, key: .f_major)
+        XCTAssertEqual(newPitch, Pitch(noteName: .B, alter: 0, octave: 4))
+
+        newPitch = try p.up(interval: .diminishedFifth, key: .f_major)
+        XCTAssertEqual(newPitch, Pitch(noteName: .C, alter: 0, octave: 5))
+
+        newPitch = try p.up(interval: .perfectFifth, key: .f_major)
+        XCTAssertEqual(newPitch, Pitch(noteName: .D, alter: -1, octave: 5))
+
+        newPitch = try p.up(interval: .minorSixth, key: .f_major)
+        XCTAssertEqual(newPitch, Pitch(noteName: .D, alter: 0, octave: 5))
+
+        newPitch = try p.up(interval: .majorSixth, key: .f_major)
+        XCTAssertEqual(newPitch, Pitch(noteName: .E, alter: -1, octave: 5))
+
+        newPitch = try p.up(interval: .minorSeventh, key: .f_major)
+        XCTAssertEqual(newPitch, Pitch(noteName: .E, alter: 0, octave: 5))
+
+        newPitch = try p.up(interval: .majorSeventh, key: .f_major)
+        XCTAssertEqual(newPitch, Pitch(noteName: .F, alter: 0, octave: 5))
+
+        newPitch = try p.up(interval: .octave, key: .f_major)
+        XCTAssertEqual(newPitch, Pitch(noteName: .G, alter: -1, octave: 5))
+    }
+
 
     func testExample() throws {
         // This is an example of a functional test case.
