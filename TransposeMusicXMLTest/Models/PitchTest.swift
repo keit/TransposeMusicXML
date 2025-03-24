@@ -238,6 +238,184 @@ final class PitchTest: XCTestCase {
         XCTAssertEqual(newPitch, Pitch(noteName: .F, alter: 0, octave: 3))
     }
 
+    func testUpWithKeyDMin() throws {
+        var newPitch: Pitch!
+        p = Pitch(noteName: .D, alter: 0, octave: 4)
+
+        newPitch = try p.up(interval: .unison, key: .d_minor)
+        XCTAssertEqual(newPitch, Pitch(noteName: .D, alter: 0, octave: 4))
+
+        newPitch = try p.up(interval: .minorSecond, key: .d_minor)
+        XCTAssertEqual(newPitch, Pitch(noteName: .E, alter: -1, octave: 4))
+
+        newPitch = try p.up(interval: .majorSecond, key: .d_minor)
+        XCTAssertEqual(newPitch, Pitch(noteName: .E, alter: 0, octave: 4))
+
+        newPitch = try p.up(interval: .minorThird, key: .d_minor)
+        XCTAssertEqual(newPitch, Pitch(noteName: .F, alter: 0, octave: 4))
+
+        newPitch = try p.up(interval: .majorThird, key: .d_minor)
+        XCTAssertEqual(newPitch, Pitch(noteName: .G, alter: -1, octave: 4))
+
+        newPitch = try p.up(interval: .perfectFourth, key: .d_minor)
+        XCTAssertEqual(newPitch, Pitch(noteName: .G, alter: 0, octave: 4))
+
+        newPitch = try p.up(interval: .diminishedFifth, key: .d_minor)
+        XCTAssertEqual(newPitch, Pitch(noteName: .A, alter: -1, octave: 4))
+
+        newPitch = try p.up(interval: .perfectFifth, key: .d_minor)
+        XCTAssertEqual(newPitch, Pitch(noteName: .A, alter: 0, octave: 4))
+
+        newPitch = try p.up(interval: .minorSixth, key: .d_minor)
+        XCTAssertEqual(newPitch, Pitch(noteName: .B, alter: -1, octave: 4))
+
+        newPitch = try p.up(interval: .majorSixth, key: .d_minor)
+        XCTAssertEqual(newPitch, Pitch(noteName: .B, alter: 0, octave: 4))
+
+        newPitch = try p.up(interval: .minorSeventh, key: .d_minor)
+        XCTAssertEqual(newPitch, Pitch(noteName: .C, alter: 0, octave: 5))
+
+        newPitch = try p.up(interval: .majorSeventh, key: .d_minor)
+        XCTAssertEqual(newPitch, Pitch(noteName: .D, alter: -1, octave: 5))
+
+        newPitch = try p.up(interval: .octave, key: .d_minor)
+        XCTAssertEqual(newPitch, Pitch(noteName: .D, alter: 0, octave: 5))
+
+    }
+    func testDownWithKeyDMin() throws {
+        var newPitch: Pitch!
+        p = Pitch(noteName: .D, alter: 0, octave: 4)
+
+        newPitch = try p.down(interval: .unison, key: .d_minor)
+        XCTAssertEqual(newPitch, Pitch(noteName: .D, alter: 0, octave: 4))
+
+        newPitch = try p.down(interval: .minorSecond, key: .d_minor)
+        XCTAssertEqual(newPitch, Pitch(noteName: .D, alter: -1, octave: 4))
+
+        newPitch = try p.down(interval: .majorSecond, key: .d_minor)
+        XCTAssertEqual(newPitch, Pitch(noteName: .C, alter: 0, octave: 4))
+
+        newPitch = try p.down(interval: .minorThird, key: .d_minor)
+        XCTAssertEqual(newPitch, Pitch(noteName: .B, alter: 0, octave: 3))
+
+        newPitch = try p.down(interval: .majorThird, key: .d_minor)
+        XCTAssertEqual(newPitch, Pitch(noteName: .B, alter: -1, octave: 3))
+
+        newPitch = try p.down(interval: .perfectFourth, key: .d_minor)
+        XCTAssertEqual(newPitch, Pitch(noteName: .A, alter: 0, octave: 3))
+
+        newPitch = try p.down(interval: .diminishedFifth, key: .d_minor)
+        XCTAssertEqual(newPitch, Pitch(noteName: .A, alter: -1, octave: 3))
+
+        newPitch = try p.down(interval: .perfectFifth, key: .d_minor)
+        XCTAssertEqual(newPitch, Pitch(noteName: .G, alter: 0, octave: 3))
+
+        newPitch = try p.down(interval: .minorSixth, key: .d_minor)
+        XCTAssertEqual(newPitch, Pitch(noteName: .G, alter: -1, octave: 3))
+
+        newPitch = try p.down(interval: .majorSixth, key: .d_minor)
+        XCTAssertEqual(newPitch, Pitch(noteName: .F, alter: 0, octave: 3))
+
+        newPitch = try p.down(interval: .minorSeventh, key: .d_minor)
+        XCTAssertEqual(newPitch, Pitch(noteName: .E, alter: 0, octave: 3))
+
+        newPitch = try p.down(interval: .majorSeventh, key: .d_minor)
+        XCTAssertEqual(newPitch, Pitch(noteName: .E, alter: -1, octave: 3))
+
+        newPitch = try p.down(interval: .octave, key: .d_minor)
+        XCTAssertEqual(newPitch, Pitch(noteName: .D, alter: 0, octave: 3))
+    }
+
+    func testUpWithKeyBbMaj() throws {
+        var newPitch: Pitch!
+        p = Pitch(noteName: .B, alter: -1, octave: 4)
+
+        newPitch = try p.up(interval: .unison, key: .b_flat_major)
+        XCTAssertEqual(newPitch, Pitch(noteName: .B, alter: -1, octave: 4))
+
+        newPitch = try p.up(interval: .minorSecond, key: .b_flat_major)
+        XCTAssertEqual(newPitch, Pitch(noteName: .B, alter: 0, octave: 4))
+
+        newPitch = try p.up(interval: .majorSecond, key: .b_flat_major)
+        XCTAssertEqual(newPitch, Pitch(noteName: .C, alter: 0, octave: 5))
+
+        newPitch = try p.up(interval: .minorThird, key: .b_flat_major)
+        XCTAssertEqual(newPitch, Pitch(noteName: .D, alter: -1, octave: 5))
+
+        newPitch = try p.up(interval: .majorThird, key: .b_flat_major)
+        XCTAssertEqual(newPitch, Pitch(noteName: .D, alter: 0, octave: 5))
+
+        newPitch = try p.up(interval: .perfectFourth, key: .b_flat_major)
+        XCTAssertEqual(newPitch, Pitch(noteName: .E, alter: -1, octave: 5))
+
+        newPitch = try p.up(interval: .diminishedFifth, key: .b_flat_major)
+        XCTAssertEqual(newPitch, Pitch(noteName: .E, alter: 0, octave: 5))
+
+        newPitch = try p.up(interval: .perfectFifth, key: .b_flat_major)
+        XCTAssertEqual(newPitch, Pitch(noteName: .F, alter: 0, octave: 5))
+
+        newPitch = try p.up(interval: .minorSixth, key: .b_flat_major)
+        XCTAssertEqual(newPitch, Pitch(noteName: .G, alter: -1, octave: 5))
+
+        newPitch = try p.up(interval: .majorSixth, key: .b_flat_major)
+        XCTAssertEqual(newPitch, Pitch(noteName: .G, alter: 0, octave: 5))
+
+        newPitch = try p.up(interval: .minorSeventh, key: .b_flat_major)
+        XCTAssertEqual(newPitch, Pitch(noteName: .A, alter: -1, octave: 5))
+
+        newPitch = try p.up(interval: .majorSeventh, key: .b_flat_major)
+        XCTAssertEqual(newPitch, Pitch(noteName: .A, alter: 0, octave: 5))
+
+        newPitch = try p.up(interval: .octave, key: .b_flat_major)
+        XCTAssertEqual(newPitch, Pitch(noteName: .B, alter: -1, octave: 5))
+
+    }
+    func testDownWithKeyBbMaj() throws {
+        var newPitch: Pitch!
+        p = Pitch(noteName: .B, alter: -1, octave: 4)
+
+        newPitch = try p.down(interval: .unison, key: .b_flat_major)
+        XCTAssertEqual(newPitch, Pitch(noteName: .B, alter: -1, octave: 4))
+
+        newPitch = try p.down(interval: .minorSecond, key: .b_flat_major)
+        XCTAssertEqual(newPitch, Pitch(noteName: .A, alter: 0, octave: 4))
+
+        newPitch = try p.down(interval: .majorSecond, key: .b_flat_major)
+        XCTAssertEqual(newPitch, Pitch(noteName: .A, alter: -1, octave: 4))
+
+        newPitch = try p.down(interval: .minorThird, key: .b_flat_major)
+        XCTAssertEqual(newPitch, Pitch(noteName: .G, alter: 0, octave: 4))
+
+        newPitch = try p.down(interval: .majorThird, key: .b_flat_major)
+        XCTAssertEqual(newPitch, Pitch(noteName: .G, alter: -1, octave: 4))
+
+        newPitch = try p.down(interval: .perfectFourth, key: .b_flat_major)
+        XCTAssertEqual(newPitch, Pitch(noteName: .F, alter: 0, octave: 4))
+
+        newPitch = try p.down(interval: .diminishedFifth, key: .b_flat_major)
+        XCTAssertEqual(newPitch, Pitch(noteName: .E, alter: 0, octave: 4))
+
+        newPitch = try p.down(interval: .perfectFifth, key: .b_flat_major)
+        XCTAssertEqual(newPitch, Pitch(noteName: .E, alter: -1, octave: 4))
+
+        newPitch = try p.down(interval: .minorSixth, key: .b_flat_major)
+        XCTAssertEqual(newPitch, Pitch(noteName: .D, alter: 0, octave: 4))
+
+        newPitch = try p.down(interval: .majorSixth, key: .b_flat_major)
+        XCTAssertEqual(newPitch, Pitch(noteName: .D, alter: -1, octave: 4))
+
+        newPitch = try p.down(interval: .minorSeventh, key: .b_flat_major)
+        XCTAssertEqual(newPitch, Pitch(noteName: .C, alter: 0, octave: 4))
+
+        newPitch = try p.down(interval: .majorSeventh, key: .b_flat_major)
+        XCTAssertEqual(newPitch, Pitch(noteName: .B, alter: 0, octave: 3))
+
+        newPitch = try p.down(interval: .octave, key: .b_flat_major)
+        XCTAssertEqual(newPitch, Pitch(noteName: .B, alter: -1, octave: 3))
+
+    }
+
+    
     func testUpFromCSharpWithKeyC() throws {
         var newPitch: Pitch!
         p = Pitch(noteName: .C, alter: 1, octave: 4)
