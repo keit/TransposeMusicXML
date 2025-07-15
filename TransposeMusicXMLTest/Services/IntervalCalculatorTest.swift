@@ -26,6 +26,10 @@ final class IntervalCalculatorTest: XCTestCase {
         // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
     }
 
+    func testCalculateInterval() throws {
+        XCTAssertEqual(IntervalCalculator.calculateInterval(from: "C4", to: "E4"), .fourth)
+        XCTAssertEqual(IntervalCalculator.calculateInterval(from: "C4", to: "F#4"), .fifth) 
+    }
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
